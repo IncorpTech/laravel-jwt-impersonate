@@ -96,7 +96,7 @@ class ImpersonateManager
                         $this->setImpersonatorId($from);
                         $token = $this->deferLogin($to);
 
-                        $this->app['events']->fire(new TakeImpersonation($from, $to));
+                        $this->app['events']->dispatch(new TakeImpersonation($from, $to));
 
                         return $token;
                     } else {
@@ -126,7 +126,7 @@ class ImpersonateManager
             $this->clear();
             $token = $this->deferLogin($impersonator);
 
-            $this->app['events']->fire(new LeaveImpersonation($impersonator, $impersonated));
+            $this->app['events']->dispatch(new LeaveImpersonation($impersonator, $impersonated));
 
             return $token;
         } else {

@@ -1,5 +1,42 @@
 # Laravel Impersonate Changelog
 
+## 1.3.0 (2019-02-28)
+
+### Changed
+
+- Laravel 5.8 compatibility (min version)
+
+## 1.2.3 (2018-09-03)
+
+### Changed
+
+- Documentation
+- Use `getSessionKey()` in `take()` method
+
+## 1.2.2 (2018-01-19)
+
+### Changed
+
+- Register Blade directives after resolving
+
+### Fixed
+
+- Blade directives documentation
+
+## 1.2.1 (2017-09-03)
+
+### Changed
+
+- PHP version requirement
+- Laravel version requirement
+
+## 1.2.0 (2017-07-28)
+
+### Added
+
+- Laravel 5.5 compatibility
+- Package auto-discovery
+
 ## 1.1.0 (2017-03-05)
 
 ### Added
